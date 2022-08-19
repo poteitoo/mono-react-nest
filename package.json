@@ -7,16 +7,15 @@
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev --parallel",
+    "dev:api": "turbo run dev --filter api",
+    "dev:front": "turbo run dev --filter front"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8",
     "turbo": "^1.4.3"
   }
 }
